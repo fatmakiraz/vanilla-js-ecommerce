@@ -5,7 +5,7 @@ const prefix = require('gulp-autoprefixer')
 const plumber = require('gulp-plumber')
 const cleanCSS = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
-const minify = require('gulp-minify');
+const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
 const liquid = require('@tuanpham-dev/gulp-liquidjs')
 const reload = browserSync.reload
@@ -65,12 +65,7 @@ gulp.task('dist-html', () => {
 
 gulp.task('dist-js', () => {
   return gulp.src('./js/*.js')
-    .pipe(minify({
-      ext: {
-        min: '.js'
-      },
-      noSource: true
-    }))
+    .pipe(terser())
     .pipe(gulp.dest('dist/js'));
 })
 
@@ -80,4 +75,9 @@ gulp.task('dist-img', () => {
     .pipe(gulp.dest('dist/img'));
 })
 
-gulp.task('dist', gulp.series('css', 'html', 'dist-css', 'dist-html', 'dist-js', 'dist-img'));
+gulp.task('dist-data', () => {
+    return gulp.src('./data/*')
+      .pipe(gulp.dest('dist/data'));
+  })
+
+gulp.task('dist', gulp.series('css', 'html', 'dist-css', 'dist-html', 'dist-js', 'dist-img', 'dist-data'));
