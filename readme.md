@@ -8,7 +8,7 @@ Vanilla JavaScript Ecommerce is a project I developed with Vanilla JavaScript to
 
 Data of products and categories are under the 'data' folder as JSON format. LiquidJS is used as the template engine. 
 
--> js/
+**js/**
 - _dom_products.js -> Includes JS actions about products like adding/removing the product to/from cart, updating product quantities, etc. This file is not used anymore. It was used before updating the project with JavaScript Classes. 
 - contact.js -> It is used to show active class/tab when clicked one of the contact tabs.
 - countdown.js -> It has countdown codes to set a future date for a marketing campaign. 
@@ -19,12 +19,12 @@ Data of products and categories are under the 'data' folder as JSON format. Liqu
 - products.js -> It includes codes about fetching products and product categories from the JSON files and all events about categories, products, and cart.
 - slider.js -> There are codes to start slider and change the slider items when clicked the next/previous buttons.
 
--> views/
+**views/**
 - components/ -> All HTML codes (.liquid format) are in this folder.
 - pages/ -> The HTML components/sections and the custom script codes are included in the pages in this folder.
 - main -> This is the main file including the common components and script codes for all sub-pages.
 
--> scss/
+**scss/**
 - components/ -> CSS codes are included in this folder.
 - config/ -> Responsive design codes are in the scss/config/mixin.scss file. CSS variables are in the scss/config/variables.scss. 
 - helper/ -> It is the folder includes formalize&normalize codes. Also, the common CSS codes are in the scss/helper/global file.
