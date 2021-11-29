@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JavaScript Project | ecomm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/img/favicon.png" type="image/png">
+    
+</head>
+
+<body>
+    {% include 'svg-icons' %}
+    {% include 'header' %}
+    <main class="main">
+        {% block content%}
+        {% endblock%}
+    </main>
+    {% include 'footer' %}
+    {% include 'scroll-top' %}
+    
+    <script src="js/header.js"></script>
+    <script src="js/global.js"></script>
+    {% block customJS%}
+    {% endblock%}
+</body>
+
+</html>

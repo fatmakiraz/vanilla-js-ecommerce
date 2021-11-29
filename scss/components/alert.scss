@@ -1,0 +1,41 @@
+.alert {
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    padding: .75rem 1rem;
+
+    &-container {
+        position: fixed;
+        top: 0;
+        right: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: var(--header-height);
+        z-index: 4;
+    }
+
+    &__message {
+        margin-left: .75rem;
+    }
+
+    &+& {
+        margin-top: 1rem;
+    }
+
+    &--success {
+        background-color: #d1e7dd;
+    }
+
+    &--danger {
+        background-color: #f8d7da;
+    }
+
+    &--warning {
+        background-color: #fff3cd;
+    }
+
+    &--update {
+        background-color: #caf3fa;
+    }
+}

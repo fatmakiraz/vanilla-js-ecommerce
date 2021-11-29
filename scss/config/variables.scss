@@ -1,0 +1,29 @@
+:root {
+    --font-family: 'Source Sans Pro', sans-serif;
+    --font-size: .885rem; 
+    --font-regular: 400;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-black: 900;
+    --color-primary: #f7df1e;
+    --color-secondary: #0D172A;
+    --color-primary-light: #fffcf5;
+    --color-title: #333; 
+    --color-text: rgb(110, 105, 105); 
+    --container-width: 72rem;
+    --transition: .3s linear;
+    --section-spacing: 2rem;
+    --border-radius: .5rem;
+    --border-radius-card: 1.25rem;
+    --finger-size: 2.75rem; 
+    --letter-spacing: .035rem;
+    --box-shadow: 0 0 .5rem #d3d3d3; 
+    --line-height: 1.5;
+    --line-height-text: 2;
+    --scroll-margin-top: 5rem;
+    --header-height: 4.5rem;
+
+    @include mq() {
+    --font-size: 1rem; 
+    }
+}

@@ -1,0 +1,25 @@
+<div class="cart__product">
+    <div class="cart__product-top-wrapper">
+        <figure>
+            <img class="cart__product__image" src="img/{{image}}.jpg" alt="Product Image">
+        </figure>
+        <div class="cart__product__content">
+            <div class="cart__product__content__title">{{title}}</div>
+            <div class="cart__product__content__desc">{{desc}}</div>
+            <div class="product__quantity">
+                <button class=" product__quantity__item product__quantity__item--decrease js-quantityButton js-quantityDecreaseButton" type="button" aria-label="Product Decrease">
+                    <svg class="icon icon-minus">
+                        <use xlink:href="#icon-minus"></use>
+                    </svg>
+                </button>
+                <input class="product__quantity__item product__quantity__item--input js-quantityInput" type="number" max="7" value="1">
+                <button class="product__quantity__item product__quantity__item--increase js-quantityButton js-quantityIncreaseButton" type="button" aria-label="Product Increase">
+                    <svg class="icon icon-plus">
+                        <use xlink:href="#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="cart__product__price">{{price}}</div>
+</div>

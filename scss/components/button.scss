@@ -1,0 +1,30 @@
+.button {
+    font-weight: var(--font-bold);
+    display: flex;
+    place-items: center;
+    height: var(--finger-size);
+    border-radius: var(--border-radius);
+    padding: .5rem 1rem;
+    transition: var(--transition);
+    
+    
+    &--primary {
+        color: #FFF;
+        background-color: var(--color-secondary);
+
+        &:hover {
+            color: var(--color-secondary);
+            background-color: var(--color-primary);
+        }
+    }
+
+    &--secondary {
+        color: var(--color-title);
+        background-color: #FFF;
+
+        &:hover {
+            background-color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+        }
+    }
+}

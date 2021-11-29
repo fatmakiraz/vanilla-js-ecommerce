@@ -1,0 +1,57 @@
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    padding: 2.5rem 1.5rem;
+    transition: var(--transition);
+    transform: translateX(100%);
+    z-index: 3;
+    overflow-y: auto;
+
+    @include mq() {
+        width: 35%;
+    }
+
+    &.is-show {
+        transform: translateX(0);
+    }
+
+    &__header {
+        font-size: 1.25rem;
+        font-weight: var(--font-semibold);
+    }
+
+    &-top-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+
+    &__empty {
+        font-weight: var(--font-semibold);
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    &__total {
+        font-size: 1.25rem;
+        font-weight: var(--font-semibold);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        &__title {
+            text-decoration: underline wavy var(--color-primary);
+        }
+
+        & + & {
+            margin-top: 1rem;
+        }
+    }
+
+}

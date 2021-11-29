@@ -1,0 +1,30 @@
+<section class="showcase section-spacing js-showcase">
+    <div class="container">
+        <div class="showcase-wrapper">
+            <div class="announcement">
+                <div class="announcement__title">Special for you</div>
+                <p class="announcement__subtitle">Here is the new collection to make you look beautiful!</p>
+            </div>
+            <div class="featured">
+                <div class="featured-wrapper">
+                    <div class="featured__item-container featured__item-container--left">
+                        <figure class="featured__item">
+                            <img class="featured__item__image" src="img/sunglasses-cover.jpg" alt="Product Image">
+                            {% include 'button' with modifier: 'secondary js-featuredItemButton', title: 'Discover Sunglasses', attribute:' data-name="sunglasses"' %}
+                        </figure>
+                        <figure class="featured__item">
+                            <img class="featured__item__image" src="img/trousers-cover.jpg" alt="Product Image">
+                            {% include 'button' with modifier: 'secondary js-featuredItemButton', title: 'Discover Trousers', attribute:' data-name="trousers"' %}
+                        </figure>
+                    </div>
+                    <div class="featured__item-container featured__item-container--right">
+                        <figure class="featured__item">
+                            <img class="featured__item__image" src="img/necklace-cover.jpg" alt="Product Image">
+                            {% include 'button' with modifier: 'secondary js-featuredItemButton', title: 'All Necklaces', attribute:' data-name="necklace"' %}
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

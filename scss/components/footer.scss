@@ -1,0 +1,19 @@
+.footer {
+    background-color: var(--color-primary-light);
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+
+        svg {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &__rights {
+        color: var(--color-text);
+        margin-top: 1rem;
+    }
+}
